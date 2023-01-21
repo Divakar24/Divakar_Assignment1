@@ -1,0 +1,10 @@
+#Question 6
+#“I am a teacher and I love to inspire and teach people”
+# How many unique words have been used in the sentence? Use the split methods and set to get the unique words.
+
+sentence = "I am a teacher and I love to inspire and teach people"
+words =[]
+words=sentence.split(' ')          #Split function by default uses whiteSpaces as the separator in the string sentence
+print(words)
+unique_words=len(set(words))                #number of unique words in given string
+print(f"number of unique words in the given string: ",unique_words )
