@@ -1,0 +1,57 @@
+#Question 4
+#it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+#A = {19, 22, 24, 20, 25, 26}
+#B = {19, 22, 20, 25, 26, 24, 28, 27}
+#age = [22, 19, 24, 25, 26, 24, 25, 24]
+# Find the length of the set it_companies
+# Add 'Twitter' to it_companies
+# Insert multiple IT companies at once to the set it_companies
+# Remove one of the companies from the set it_companies
+# What is the difference between remove and discard
+# Join A and B
+# Find A intersection B
+# Is A subset of B
+# Are A and B disjoint sets
+# Join A with B and B with A
+# What is the symmetric difference between A and B
+# Delete the sets completely
+# Convert the ages to a set and compare the length of the list and the set
+
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+count = len(it_companies)
+print(f"length of it companies: ", count)                  #length of it_companies list
+
+it_companies.add("Twitter")                                 #adding twitter
+
+print(f"add new company: ", it_companies)
+it_companies.update(['infosys', 'accenture', 'cognizant'])  # adding multiple it companies
+print(f"new it companies list:", it_companies)   
+
+it_companies.remove('cognizant')                           #removing cognizant from the list
+print(f"remove it companies:", it_companies)
+
+it_companies.discard('infosys')                           #discarding infosys
+print(f"discard it companies:", it_companies)
+#Whenever we use remove method to remove the element which is not present it will show an error. But tht discard method
+#will not through any error eventhough any element was not found
+
+print(f"join A union B:{A | B}")                          # join A and B
+print(f"join A intersection B:{A & B}")                   # prints A intersection B
+print(f"if A is subset of B:{A.issubset(B)}")             #Bis subset of A if yes, it returns True
+print(f"if A is disjoint of B:{A.isdisjoint(B)}")
+
+A.update(B)                                               #joint A with B and B with A
+print(A) 
+B.update(A)
+print(B)
+
+print(f"symmetric difference:{A.symmetric_difference(B)}") #symmetric difference between A and B
+A.clear()
+B.clear()
+print(f"deleting both A and B: ", A.clear(), B.clear())    #delete set completely
+print(f"The length of the list age:{len(age)}")
+AgeSet=set(age)                                            #convert age to set and compare length of list and set
+print(f"The length of the set age:{len(age)}")
