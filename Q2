@@ -1,0 +1,28 @@
+#Question 2
+# Create an empty dictionary called dog
+# Add name, color, breed, legs, age to the dog dictionary
+# Create a student dictionary and add first_name, last_name, gender, age, marital status,skills, country, city and address as keys for the dictionary
+# Get the length of the student dictionary
+# Get the value of skills and check the data type, it should be a list
+# Modify the skills values by adding one or two skills
+# Get the dictionary keys as a list
+# Get the dictionary values as a list
+
+dog = {} #empty dictionary labled dog
+dog = {"name":"jimmy", "color":"White", "bread":"pug", "legs":"4", "age":"2"} #adding key and values
+
+#student dictionary
+student= {} 
+student= {"first_name":"Divakar","last_name":"Bethamcharla","gender":"male","age":"23","martial status":"single",
+           "skills":['Machine Learning'],"country":"India","city":"Hyderabad","address":"Kothagudem"} #adding key and values
+
+print(f"length of student: {len(student)}") # returns the length of student dictionary
+
+print(type(student['skills']))         #prints the value of skills and type of data   
+
+student['skills'].extend(['Python', 'SQL']) #adding two new skills
+print(student['skills'])
+
+print(f"keys of student dictionary:{student.keys()}")   #prints the dictionary keys as list
+
+print(f"values of student dictionary: {student.values()}") #prints the dictionary values as list
