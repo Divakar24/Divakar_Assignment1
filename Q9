@@ -1,0 +1,14 @@
+#Question 9
+#Write a program, which reads weights (lbs.) of N students into a list and convert these weights to kilograms in a separate list using Loop. N: No of students (Read input from user)
+#Ex: L1: [150, 155, 145, 148]
+#Output: [68.03, 70.3, 65.77, 67.13]
+
+#list of students weights
+weight_lbs = [150, 155, 145, 148]
+weight_kgs = []
+
+#converting weight to kgs
+for x in weight_lbs:                       # for loop
+    weight_kgs.append(x*0.453592)            # appending the values
+weight_kgs=[round(x,2) for x in weight_kgs]
+print("weight in kgs : ",weight_kgs)
