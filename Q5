@@ -1,0 +1,15 @@
+#Question 5
+# The radius of a circle is 30 meters.
+# Calculate the area of a circle and assign the value to a variable name of _area_of_circle_
+# Calculate the circumference of a circle and assign the value to a variable name of _circum_of_circle_
+# Take radius as user input and calculate the area
+
+radius=30                                       #declaring variable radius with 30
+print(f"radius of the circle is: ", radius)
+area_of_circle=3.14*(radius**2)                 #area of circle                    
+circum_of_circle=2*3.14*radius           #circumference of circle
+print(f"area of circle: ", area_of_circle)
+print(f"circumference of circle: ", circum_of_circle)
+radius_input = int(input("enter the radius : "))
+new_area = 3.14*radius_input*radius_input
+print(f"Area of the circle with the input radius: ", new_area)
