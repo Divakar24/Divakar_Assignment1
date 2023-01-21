@@ -1,0 +1,14 @@
+#Question:3
+# Create a tuple containing names of your sisters and your brothers (imaginary siblings are fine)
+# Join brothers and sisters tuples and assign it to siblings
+# How many siblings do you have?
+
+brothers = ("Prudhvi", "Vasu", "Revanth")    #brothers tuple
+sisters = ("Nandini", "Bindhu", "Varsha", "Nidhi")  #sisters tuple
+siblings = brothers+sisters                           #siblings tuple by adding
+print(f"no of siblings: {len(siblings)}")             #number of siblings
+print(siblings)
+family_member = ()
+family_member += siblings + ("Srinivasa Rao", "Sunitha")  # adding the parents names
+print("type: ",type(family_member))
+print(f"My family members: {family_member}")
